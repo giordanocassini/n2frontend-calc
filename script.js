@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       display.value = value;
     }
   
-    function NumberDig(digit) {
+    function typeNumber(digit) {
       currentInput += digit;
       updateDisplay(currentInput);
     }
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     // Exposing functions to global scope
-    window.NumberDig = NumberDig;
+    window.typeNumber = typeNumber;
     window.appendOperator = appendOperator;
     window.calculate = calculate;
     window.clearInput = clearInput;
