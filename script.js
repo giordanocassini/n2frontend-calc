@@ -56,12 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function switchTheme() {
-    const themeStylesheet = document.getElementById('theme-stylesheet');
-    if (isDefaultTheme) {
-      themeStylesheet.href = 'theme-dark.css';
-    } else {
-      themeStylesheet.href = 'index.css';
-    }
+    const themeStylesheet = document.getElementById("theme-stylesheet");
+    themeStylesheet.href = isDefaultTheme ? "theme-dark.css" : "index.css";
     isDefaultTheme = !isDefaultTheme;
   }
 
